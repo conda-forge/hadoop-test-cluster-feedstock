@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/h/hadoop-test-cluster/hadoop-test-cluster-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/h/hadoop-test-cluster/hadoop-test-cluster-{{ version }}.tar.gz
   sha256: b72948f296c0537b9800f8b7befb2806bbbd99de3b54656ccb8bdb7be99b4424
 
 build:
   skip: True  # [win]
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
